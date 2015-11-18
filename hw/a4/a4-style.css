@@ -31,7 +31,7 @@ html, body, p{
   display:inline;
   text-decoration:none;
   font-weight: bold;
-  padding: 0px 20px;
+  padding: 20px 20px;
   color: #6bb26b;
 }
 
@@ -41,12 +41,19 @@ html, body, p{
 
 /* game content */
 
-.hidden {
-  display: none;
+#game a {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+  padding: 40px;
+  margin: 0px;
 }
 
-.show {
-  display: block;
+#scores {
+  margin-top: 20px;
+  height: 300px;
+  width: 50%;
+  overflow-y: scroll;
 }
 
 /* The styles below are for the webpage content */

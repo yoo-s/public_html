@@ -21,7 +21,7 @@
 
 	<?php
 		if (!empty($old_user)) {
-			echo '<center>User: '.$old_user.' is logged out</center>';
+			echo '<center>' . $old_user . ', you have successfully logged out!</center>';
 		} else {
 			echo '<center>You were not logged in!</center>';
 		}

@@ -9,9 +9,9 @@
 
 function display_items($item = null) {
 	$items = array(
-		"rock" => '<a href="?item=rock"><br><img src="images/rock.png" width="150" alt="rock"></a><br>',
-		"paper" => '<a href="?item=paper"><br><img src="images/paper.png" width="150" alt="paper"></a><br>',
-		"scissors" => '<a href="?item=scissors"><br><img src="images/scissors.png" width="150" alt="scissors"></a><br>'
+		"rock" => '<li><a href="?item=rock"><br><img src="images/rock.png" width="150" alt="rock"></a>',
+		"paper" => '<a href="?item=paper"><br><img src="images/paper.png" width="150" alt="paper"></a>',
+		"scissors" => '<a href="?item=scissors"><br><img src="images/scissors.png" width="150" alt="scissors"></a></li>'
 	);
 
 	if ($item == null) :
@@ -41,6 +41,9 @@ function game() {
 			die;
 		endif;
 
+		$w = $_SESSION['wins'];
+		$l = $_SESSION['losses'];
+
 		// decide winner
 		if ($item =='rock' && $item2 == 'scissors' ||
 			$item =='paper' && $item2 == 'rock' ||
@@ -49,7 +52,7 @@ function game() {
 				$won = "SELECT wins
 					FROM Users
 					UPDATE Users
-					SET @wins += 1;
+					SET 'wins' = $w + 1;
 					WHERE userName= '" . $_SESSION['userName'] . "'";
 				$res = mysqli_query($dbc, $won);
 		endif;
@@ -59,11 +62,10 @@ function game() {
 			$item2 =='paper' && $item == 'rock' ||
 			$item2 =='scissors' && $item == 'paper') :
 				echo '<h2>You Lose!</h2><br>';
-				$_SESSION['losses']++;
 				$lost = "SELECT losses
 					FROM Users
 					UPDATE Users
-					SET @losses += 1;
+					SET 'losses' = $l + 1;
 					WHERE userName= '" . $_SESSION['userName'] . "'";
 				$res = mysqli_query($dbc, $lost);
 		endif;

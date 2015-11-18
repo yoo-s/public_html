@@ -40,7 +40,9 @@
 	<header>
 		<center>
 		<img src="images/rps_title.png" width="40%" /><br />
-		<?php include 'nav.php';?><br />
+		<?php 
+			include 'nav.php';
+		?><br>
 	  	</center>
 	</header>
 	<center><h3> Log In </h3><br></center>
@@ -48,8 +50,8 @@
 	<?php
 
 		if (isset($_SESSION['valid_user'])) {
-			echo " <h3> You are logged in as </h3><p> User: ".$_SESSION['valid_user']; 
-			echo " <p> First Name: ".$_SESSION['firstName']; 
+			echo " <center><p> You are logged in as </p> " . $_SESSION['valid_user'] . "<br><br>"; 
+			echo " <br><br><h2> Welcome, " . $_SESSION['firstName'] . "!</h2></center>"; 
 		}
 		else {
 			if (isset($userName)) {
