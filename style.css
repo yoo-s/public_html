@@ -1,0 +1,343 @@
+*{
+  /* A universal CSS reset */
+  margin:0;
+  padding:0;
+}
+
+html, body, p{
+  background: url("http://i.imgur.com/RRqdd9R.png") no-repeat fixed;
+  /*background: url("http://i.imgur.com/HktC6yL.jpg") no-repeat fixed;*/
+  background-size: cover;
+  background-position: right;
+  padding: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f0f8ff;
+  height: 100%;
+}
+
+#welcome {
+  margin-left: 60px;
+}
+
+#welcometext {
+  font-color:#bba29b;
+}
+
+/*minimalistic menu bar--------------------------------*/
+
+#menu {
+  width: 100%;
+}
+
+#navigationMenu {
+  display: inline-block;
+  position: relative;
+  left: 500%;
+  float: left;
+  width: 100%;
+  border-spacing: 0px 50px;
+  //border-style: solid;
+}
+
+#navigationMenu td {
+  padding: 0px 100px;
+  //border-style: solid;
+  position: relative;
+}
+
+#navigationMenu span{
+  /* Container properties */
+  width:0;
+  left:39px;
+  padding:0;
+  position:absolute;
+  overflow:hidden;
+
+  /* Text properties */
+  font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  letter-spacing:0.6px;
+  white-space:nowrap;
+  line-height:40px;
+
+  /* CSS3 Transition: */
+  -webkit-transition: 0.25s;
+
+  /* Future proofing (these do not work yet): */
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#navigationMenu a{
+  height:40px;
+  width:40px;
+  display:inline-block;
+  position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover span{
+  width:auto;
+  padding:0 20px;
+  overflow:visible;
+}
+
+#navigationMenu a:hover{
+  text-decoration:none;
+
+  /* CSS outer glow with the box-shadow property */
+  -moz-box-shadow:0 0 5px #9ddff5;
+  -webkit-box-shadow:0 0 5px #9ddff5;
+  box-shadow:0 0 5px #9ddff5;
+}
+
+/* Home Button */
+
+#navigationMenu .home { background: url("http://i.imgur.com/NsEQS9w.png"); background-size: 40px}
+#navigationMenu .home:hover {background: url("http://i.imgur.com/91oxeA7.png"); background-size: 40px}
+#navigationMenu .home span{
+  background-color:#bba29b;
+  color:#28120c;
+  text-shadow:1px 1px 0 #28120c;
+}
+
+/* Info Button */
+
+#navigationMenu .about { background: url("http://i.imgur.com/0VEnmIx.png"); background-size: 40px}
+#navigationMenu .about:hover { background: url("http://i.imgur.com/bIcsljE.png"); background-size: 40px}
+#navigationMenu .about span{
+  background-color:#bba29b;
+  color:#28120c;
+  text-shadow:1px 1px 0 #28120c;
+}
+
+/* Portfolio Button */
+
+#navigationMenu .portfolio { background: url("http://i.imgur.com/hqmlbpq.png"); background-size: 40px}
+#navigationMenu .portfolio:hover{ background: url("http://i.imgur.com/fYbQSTb.png"); background-size: 40px}
+#navigationMenu .portfolio span{
+  background-color:#bba29b;
+  color:#28120c;
+  text-shadow:1px 1px 0 #28120c;
+}
+
+/* Contact Button */
+
+#navigationMenu .contact { background: url("http://i.imgur.com/keN2t7R.png"); background-size: 40px}
+#navigationMenu .contact:hover { background: url("http://i.imgur.com/zbA55AJ.png"); background-size: 40px}
+#navigationMenu .contact span{
+  background-color:#bba29b;
+  color:#28120c;
+  text-shadow:1px 1px 0 #28120c;
+}
+
+/* Back Button */
+
+#navigationMenu .back2 { background: url("http://i.imgur.com/nkhqKva.png"); background-size: 40px}
+#navigationMenu .back2:hover { background: url("http://i.imgur.com/xAfAIt3.png"); background-size: 40px}
+#navigationMenu .back2 span{
+  background-color:#bba29b;
+  color:#28120c;
+  text-shadow:1px 1px 0 #28120c;
+}
+
+/* Code Button */
+
+#navigationMenu .code { background: url("http://i.imgur.com/TsIgWaF.png"); background-size: 40px}
+#navigationMenu .code:hover {background: url("http://i.imgur.com/tCEL52b.png"); background-size: 40px}
+#navigationMenu .code span{
+  background-color:#af1e83;
+  color:#460f35;
+  text-shadow:1px 1px 0 #d244a6;
+}
+
+/* Art Button */
+
+#navigationMenu .art { background: url("http://i.imgur.com/oPc229w.png"); background-size: 40px}
+#navigationMenu .art:hover { background: url("http://i.imgur.com/aCC856r.png"); background-size: 40px}
+#navigationMenu .art span{
+  background-color:#7da315;
+  color:#3d4f0c;
+  text-shadow:1px 1px 0 #99bf31;
+}
+
+/* Music Button */
+
+#navigationMenu .music { background: url("http://i.imgur.com/By6d1zH.png"); background-size: 40px}
+#navigationMenu .music:hover{ background: url("http://i.imgur.com/mdjw4CN.png"); background-size: 40px}
+#navigationMenu .music span{
+  background-color:#d0a525;
+  color:#604e18;
+  text-shadow:1px 1px 0 #d8b54b;
+}
+
+/* Games Button */
+
+#navigationMenu .games { background: url("http://i.imgur.com/2JRaDKf.png"); background-size: 40px}
+#navigationMenu .games:hover { background: url("http://i.imgur.com/tXRLjdI.png"); background-size: 40px}
+#navigationMenu .games span{
+  background-color:#1e8bb4;
+  color:#223a44;
+  text-shadow:1px 1px 0 #44a8d0;
+}
+
+/* Back Button */
+
+#navigationMenu .back { background: url("http://i.imgur.com/pW5RZ0I.png"); background-size: 40px}
+#navigationMenu .back:hover {background: url("http://i.imgur.com/40PzIXN.png"); background-size: 40px}
+#navigationMenu .back span{
+  background-color:#c86c1f;
+  color:#5a3517;
+  text-shadow:1px 1px 0 #d28344;
+}
+
+
+/* The styles below are for the webpage content */
+
+#main{
+  /*margin:auto;
+  width: 1200px;*/
+  float:left;
+  position:relative;
+  width: 40px;
+}
+
+h1{
+  color:#fff;
+  font-size:30px;
+  font-weight:normal;
+  padding:10px 0 20px;
+  text-align:center;
+}
+
+h4{
+  font-size:15px;
+  font-weight:normal;
+  text-align:center;
+}
+
+h1,h2{
+  font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+a, a:visited, a:active {
+  color:#bba29b;
+  text-decoration:none;
+  outline:none;
+}
+
+a:hover{
+  color: #a97870;
+  text-decoration:none;
+}
+
+a img{
+  border:none;
+}
+
+img {
+  border: none;
+}
+
+#wolves {
+  border-color: #28120c;
+  border-style: solid ridge;
+  border-width: 10px;
+}
+
+.links {
+  position: relative;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.links li {
+  padding: 20px 40px;
+  display: inline;
+  float: left;
+  background-color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+#home {
+  padding: 10px 40px;
+  display: inline;
+  float: right;
+  background-color: transparent;
+}
+
+caption {
+  font-size: 20px;
+  font-family: 'trebuchet ms';
+}
+
+table {
+  color: #fff5ee;
+  font-family: sans-serif;
+}
+
+#schedule {
+  border: solid 1pt #bba29b;
+  border-collapse: collapse;
+  border-spacing: 10pt;
+  width: 910px;
+}
+
+#schedule td {
+  font-size: 15px;
+  font-family: "trebuchet ms";
+  width: 130px;
+  padding: 40px 10px;
+}
+
+#schedule td:hover {
+  background-color: #2c201b;
+  color: #bba29b;
+}
+
+#schedule th {
+  border: solid 1pt #bba29b;
+  padding: 5pt;
+  width: 125px;
+}
+
+td {
+  padding: 40px;
+}
+
+#button {
+  padding: 0px;
+  border-style: none;
+  width: 40px;
+}
+
+#button:hover {
+  box-shadow: #7b68ee 0.2em 0.2em 0.5em;
+}
+
+#copy {
+  padding: 0;
+  bottom: 0px;
+  color: #bba29b;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -40px;
+}
+
+.footer, .push {
+  height: 40px;
+}

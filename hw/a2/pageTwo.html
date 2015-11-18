@@ -1,0 +1,128 @@
+<!-- Filename: pageTwo.html
+     Name: Soo-Min Yoo
+     Date: 10/18/15
+  -->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Art Store</title>
+  <link type="text/css" rel="stylesheet" href="a2-style.css">
+</head>
+<body>
+  <header>
+    <nav id="black">
+      <li id="blacklinks">
+        <a href="pageTwo.html">My Account</a>
+        <a href="#">Wish List</a>
+        <a href="#">Shopping Cart</a>
+        <a href="#">Checkout</a>
+      </li>
+    </nav>
+    <br />
+    <h1>Art Store</h1><br />
+    <nav id="white">
+      <li id="whitelinks">
+        <a href="pageOne.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Art Works</a>
+        <a href="#">Artists</a>
+      </li>
+    </nav>
+  </header>
+  <section id="body">
+    <h2 id="portrait-title">Customer Registration</h2><br />
+    <form method="get" action="http://web.engr.oregonstate.edu/~schutfoj/cs290/process.php">
+      <h3><b>1. User Info</b></h3>
+      <hr />
+      <fieldset>
+        <table id="form">
+          <tr>
+            <td id="col1"><label>First Name</label><br />
+              <input type="text" name="first" /></td>
+            <td><label>Last Name</label><br />
+              <input type="text" name="last" /></td>
+          </tr>
+          <tr>
+            <td id="col1" colspan="2"><label>Email</label><br />
+              <input id="wholespan" type="email" name="email" placeholder="format for email is xxx@yyy.zzz" /></td>
+          </tr>
+          <tr>
+            <td id="col1"><label>Password</label><br />
+              <input type="password" name="pass1" placeholder="at least 8 characters" /></td>
+            <td><label>Password Repeat</label><br />
+              <input type="password" name="pass2" placeholder="at least 8 characters" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <h3><b>2. Location</b></h3>
+      <hr />
+      <fieldset>
+        <table id="form">
+          <tr>
+            <td id="col1" colspan="3"><label>Address</label><br />
+              <input id="wholespan" type="text" name="address" /></td>
+          </tr>
+          <tr>
+            <td id="col1"><label>City</label><br />
+              <input type="text" name="city" /></td>
+            <td width="20%"><label>State</label><br />
+              <input id="halfspan" type="text" name="state" /></td>
+            <td><label>Zip</label><br />
+              <input id="widespan" type="text" name="zip" /></td>
+          </tr>
+          <tr>
+            <td id="col1"><label>Phone</label><br />
+              <input type="tel" name="phone" placeholder="NNN-NNN-NNNN" /></td>
+            <td colspan="2"><label>Country</label><br />
+              <select name="country">
+                <option name="Canada" value="Canada">Canada</option>
+                <option name="UnitedStates" value="US">United States</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td id="col1"><label>Continent</label><br />
+              <input type="radio" name="continent" value="1">North America<br />
+              <input type="radio" name="continent" value="2">Europe<br />
+              <input type="radio" name="continent" value="3">South America</td>
+          </tr>
+        </table>
+      </fieldset>
+      <h3><b>3. Personal Details</b></h3>
+      <hr />
+      <fieldset>
+        <table id="form">
+          <tr>
+            <td width="60%"><label>Birth Day</label><br />
+              <input type="date" date-format="dd/mm/yyyy" name="birthday" .../></td>
+            <td><label>Favorite Color</label><br />
+              <input type="color" name="favorite" /></td>
+          </tr>
+          <tr>
+            <td id="col1" colspan="2"><label>Interest in Art</label><br />
+              Minimal<input id="widespan" type="range" min="1" max="10" step="1" name="interest" />Love it!</td>
+          </tr>
+        </table>
+      </fieldset>
+      <h3><b>4. All Done</b></h3>
+      <hr />
+      <fieldset>
+        <table id="form">
+          <tr>
+            <td id="col1">
+              <input type="checkbox" name="accept" >
+              <label>I agree to the <a href="#">Terms of the Site</a></label><br /><br />
+              <button type="submit" />
+                <img src="images/button_ok.png" alt="" />Sign Me Up!
+              </button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </section>
+  <footer>
+    <p id="copy">All images are copyright to their owners. This is just a hypothetical site &copy; 2014 Copyright Art Store</p>
+  </footer>
+</body>
+</html>

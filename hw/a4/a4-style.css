@@ -1,0 +1,197 @@
+*{
+  /* A universal CSS reset */
+  margin:0;
+  padding:0;
+}
+
+html, body, p{
+  background-color: #e6ffe6;
+  color: #6bb26b;
+  padding: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  height: 100%;
+}
+
+/* nav bar */
+
+#menu {
+  background-color: #fafafa;
+  margin: 0px 0px 20px;
+  height: 50px;
+}
+
+#menulinks {
+  list-style-type: none;
+  float: left;
+  padding: 15px 0px 10px;
+}
+
+#menu a{
+  display:inline;
+  text-decoration:none;
+  font-weight: bold;
+  padding: 0px 20px;
+  color: #6bb26b;
+}
+
+#menu a:hover {
+  color: #000;
+}
+
+/* game content */
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* The styles below are for the webpage content */
+
+h1{
+  color:#008f00;
+  font-size:30px;
+  font-weight:normal;
+  padding:10px 0 20px;
+  text-align:center;
+  font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+  text-decoration: underline;
+}
+
+h4{
+  font-size:15px;
+  font-weight:normal;
+  text-align:center;
+}
+
+#side {
+  border-style: dotted;
+  background-color: #ebffff;
+  border-color: #009999;
+  width: 25%;
+}
+
+#img {
+  border: none;
+  height: 6em;
+}
+
+#img2 {
+  border: none;
+  height: 6em;
+}
+
+#winner {
+  border-style: solid;
+  background-color: #f0f8f0;
+  width: 40%;
+}
+
+#sc1 {
+  font-size: 2em;
+  color: #6bb26b;
+  text-align: left;
+}
+
+#sc2 {
+  font-size: 2em;
+  color: #6bb26b;
+  text-align: right;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 1em;
+}
+
+td {
+  padding: 40px;
+  width: 20em;
+  color: #000;
+  text-align: center;
+}
+
+/* form --------------- */
+
+#form {
+  width: 50%;
+  border-style: none;
+}
+
+#form td {
+  border-style: none;
+  padding: 5px 10px;
+}
+fieldset {
+  padding: 20px 0px;
+  border-style: none;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: #A9E2FF;
+}
+
+/* css button ----------------------------- */
+
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6f7e6), color-stop(1, #b1d4ac));
+  background:-moz-linear-gradient(top, #e6f7e6 5%, #b1d4ac 100%);
+  background:-webkit-linear-gradient(top, #e6f7e6 5%, #b1d4ac 100%);
+  background:-o-linear-gradient(top, #e6f7e6 5%, #b1d4ac 100%);
+  background:-ms-linear-gradient(top, #e6f7e6 5%, #b1d4ac 100%);
+  background:linear-gradient(to bottom, #e6f7e6 5%, #b1d4ac 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6f7e6', endColorstr='#b1d4ac',GradientType=0);
+  background-color:#e6f7e6;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #caf5bc;
+  display:inline-block;
+  cursor:pointer;
+  color:#4b854e;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:10px 24px;
+  margin: 5px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #b1d4ac), color-stop(1, #e6f7e6));
+  background:-moz-linear-gradient(top, #b1d4ac 5%, #e6f7e6 100%);
+  background:-webkit-linear-gradient(top, #b1d4ac 5%, #e6f7e6 100%);
+  background:-o-linear-gradient(top, #b1d4ac 5%, #e6f7e6 100%);
+  background:-ms-linear-gradient(top, #b1d4ac 5%, #e6f7e6 100%);
+  background:linear-gradient(to bottom, #b1d4ac 5%, #e6f7e6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b1d4ac', endColorstr='#e6f7e6',GradientType=0);
+  background-color:#b1d4ac;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+#copy {
+  padding: 0;
+  bottom: 0px;
+  color: #6eb86e;
+}
+
+.footer, .push {
+  height: 40px;
+}
+
