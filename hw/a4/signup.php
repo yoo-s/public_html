@@ -7,7 +7,7 @@
 	<!-- Script for the event handlers    -->
 	<script type = "text/javascript"  src = "validateSignUp.js" > </script>	
 </head>
-<body>
+<body >
   <header>
 	<center>
 	<img src="images/rps_title.png" width="40%" /><br />
