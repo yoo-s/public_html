@@ -32,14 +32,14 @@
 		ORDER BY wins DESC";
 	$res = mysqli_query($dbc, $sql);
 
-	echo "<table>"; // start a table tag in the HTML
+	echo "<center><table>"; // start a table tag in the HTML
 	echo "<tr><td>Username</td><td>Wins</td><td>Losses</td></tr>";
 	while($row = mysqli_fetch_array($res)){   //Creates a loop to loop through results
 		echo "<tr><td>" . $row['userName'] . "</td>
 			<td>" . $row['wins'] . "</td>
 			<td>" . $row['losses'] . "</td></tr>";
 	}
-	echo "</table>"; //Close the table in HTML
+	echo "</table></center>"; //Close the table in HTML
 
 	mysqli_close(); //Make sure to close out the database connection
 
