@@ -7,7 +7,7 @@
 	<!-- Script for the event handlers    -->
 	<script type = "text/javascript"  src = "validateSignUp.js" > </script>	
 </head>
-<body >
+<body>
   <header>
 	<center>
 	<img src="images/rps_title.png" width="40%" /><br />
@@ -19,7 +19,8 @@
 include 'connectvars.php';
 //require_once('connectvars.php');
 // Connect to the database
-$dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) or die ("Could not connect to MySQL");
+$dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) 
+	or die ("Error: Could not connect to database.");
 mysqli_select_db($dbc, DB_NAME)
 	or die("Error selecting database: " . DB_NAME);
 
@@ -41,7 +42,7 @@ if (isset($_POST['submit'])) {
 			mysqli_query($dbc, $query);
 
 			// Confirm success with the user
-			echo '<p>Your new account has been successfully created. You\'re now ready to log in.</p>';
+			echo '<p>Thank you for registering! You\'re now ready to log in.</p>';
 
 			mysqli_close($dbc);
 			exit();

@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Signup - yooso's RockPaperScissors</title>
-	<link rel="stylesheet" href="a4-style.css">
-	<!-- Script for the event handlers    -->
-	<script type = "text/javascript"  src = "validateSignUp.js" > </script>	
-</head>
-<body>
-	<header>
-		<center>
-		<img src="images/rps_title.png" width="40%" /><br />
-		<?php include 'nav.php';?><br />
-		</center>
-	</header>
-	<center><h3>Scoreboard</h3></center>
-
 	<?php
 	session_start();
 	include 'connectvars.php';
@@ -26,7 +8,24 @@
 	}
 	mysqli_select_db($dbc, DB_NAME)
 		or die("Error selecting database: " . DB_NAME);
+	?>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Signup - yooso's RockPaperScissors</title>
+	<link rel="stylesheet" href="a4-style.css">
+</head>
+<body>
+	<header>
+		<center>
+		<img src="images/rps_title.png" width="40%" /><br />
+		<?php include 'nav.php';?><br />
+		</center>
+	</header>
+	<center><h3>Scoreboard</h3></center>
+	<?php
 	$sql = "SELECT userName, wins, losses
 		FROM Users
 		ORDER BY wins DESC";
@@ -41,7 +40,7 @@
 	}
 	echo "</table></center>"; //Close the table in HTML
 
-	mysqli_close(); //Make sure to close out the database connection
+	mysqli_close($dbc); //Make sure to close out the database connection
 
 	?>
 

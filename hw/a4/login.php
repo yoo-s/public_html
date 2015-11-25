@@ -6,7 +6,7 @@
 		$userName = $_POST['userName'];
 		$password = $_POST['password'];
 	
-		$dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) or die ("Could not connect to MySQL");
+		$dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) or die ("Error: Could not connect to database.");
 		mysqli_select_db($dbc, DB_NAME)
 			or die("Error selecting database: " . DB_NAME);
 		

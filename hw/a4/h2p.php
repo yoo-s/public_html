@@ -2,9 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>yooso's RockPaperScissors</title>
+    <title>How to Play - yooso's RockPaperScissors</title>
     <link rel="stylesheet" href="a4-style.css">
-    <script type="text/Javascript" src="rps.js"></script>
   </head>
   <body>
     <header>
