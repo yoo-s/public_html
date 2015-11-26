@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<center>
-		<img src="images/rps_title.png" width="40%" /><br />
+		<img src="../a4/images/rps_title.png" width="40%" /><br />
 		<?php include 'nav.php';?><br />
 	  	</center>
 	</header>
