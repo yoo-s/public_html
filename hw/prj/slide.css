@@ -1,0 +1,82 @@
+*{
+  /* A universal CSS reset */
+  margin:0;
+  padding:0;
+}
+
+html, body, p{
+  background-color: #e9d5c7;
+  color: #8c8077;
+  padding: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  height: 100%;
+}
+
+/* Slide Show --------------------------- */
+
+#cookie {
+  width: 20%;
+}
+
+#container {
+  width: 500px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+  border-style: solid;
+}
+
+#imgSS {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+}
+
+#left {
+  width: 50px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#right {
+  width: 50px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.goleft {
+  background: url("http://i.imgur.com/qq5Axjv.png");
+  background-size: 50px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 88%;
+  left: 0px;
+  border: 0;
+}
+
+.goleft:hover {
+  background: url("http://i.imgur.com/MACo7Bv.png");
+  background-size: 50px;
+}
+
+.goright {
+  background: url("http://i.imgur.com/dq8rBIt.png");
+  background-size: 50px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 88%;
+  left: 0px;
+  border: 0;
+}
+
+.goright:hover {
+  background: url("http://i.imgur.com/AVyEZZz.png");
+  background-size: 50px;
+}

@@ -1,0 +1,251 @@
+*{
+  /* A universal CSS reset */
+  margin:0;
+  padding:0;
+}
+
+html, body {
+  background-color: #e3ced2;
+  color: #3e2e24;
+  padding: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  height: 100%;
+}
+
+p {
+  background-color: none;
+  padding: 20px;
+}
+
+/* nav bar */
+
+#menu {
+  margin: 0px 0px 20px;
+  height: 50px;
+  text-align: center;
+}
+
+#menulinks {
+  list-style-type: none;
+  float: center;
+  padding: 15px 0px 10px;
+}
+
+#menu a{
+  display:inline;
+  text-decoration:none;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin: 0px 20px;
+  color: #201813;
+}
+
+#menu a:hover {
+  color: #000;
+}
+
+/* The styles below are for the webpage content */
+
+h1{
+  color:#3e2e24;
+  font-size:40px;
+  font-weight:bold;
+  padding:10px 0 20px;
+  text-align:center;
+  font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+h4{
+  font-size:15px;
+  font-weight:normal;
+  text-align:center;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 1em;
+}
+
+td {
+  padding: 20px;
+  width: 10em;
+  color: #000;
+  text-align: center;
+}
+
+/* form --------------- */
+
+#form {
+  width: 50%;
+  border-style: none;
+}
+
+#form td {
+  border-style: none;
+  padding: 5px 10px;
+}
+fieldset {
+  padding: 20px 0px;
+  border-style: none;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: #A9E2FF;
+}
+
+/* slideshow ----------------------------- */
+
+#container {
+  width: 500px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+  border-style: solid;
+}
+
+#imgSS {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+}
+
+#left {
+  width: 50px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#right {
+  width: 50px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.goleft {
+  background: url("http://i.imgur.com/qq5Axjv.png");
+  background-size: 50px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 88%;
+  left: 0px;
+  border: 0;
+}
+
+.goleft:hover {
+  background: url("http://i.imgur.com/MACo7Bv.png");
+  background-size: 50px;
+}
+
+.goright {
+  background: url("http://i.imgur.com/dq8rBIt.png");
+  background-size: 50px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 88%;
+  left: 0px;
+  border: 0;
+}
+
+.goright:hover {
+  background: url("http://i.imgur.com/AVyEZZz.png");
+  background-size: 50px;
+}
+
+/* custom -------------------------- */
+
+#petbox {
+  border: solid #33292d 4px;
+  border-radius: 20px;
+  width: 300px;
+  background: #faf5f7;
+}
+
+#petaction {
+  padding: 10px;
+  border-radius: 40px;
+}
+
+#gframe {
+  width: 80%;
+  border: solid #33292d 4px;
+  border-radius: 20px;
+  background: #cab7c0;
+  padding: 40px;
+}
+
+.gbox {
+  //display: inline-block;
+  border: solid #33292d 4px;
+  border-radius: 10px;
+  background: #fff;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.gimg {
+  display: block;
+  margin: auto;
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.myButton {
+  background: #d6c9ce;
+  background-image: -webkit-linear-gradient(top, #d6c9ce, #8c757e);
+  background-image: -moz-linear-gradient(top, #d6c9ce, #8c757e);
+  background-image: -ms-linear-gradient(top, #d6c9ce, #8c757e);
+  background-image: -o-linear-gradient(top, #d6c9ce, #8c757e);
+  background-image: linear-gradient(to bottom, #d6c9ce, #8c757e);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #3d3235;
+  font-size: 20px;
+  padding: 20px;
+  border: solid #33292d 4px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background: #423439;
+  background-image: -webkit-linear-gradient(top, #423439, #6b595d);
+  background-image: -moz-linear-gradient(top, #423439, #6b595d);
+  background-image: -ms-linear-gradient(top, #423439, #6b595d);
+  background-image: -o-linear-gradient(top, #423439, #6b595d);
+  background-image: linear-gradient(to bottom, #423439, #6b595d);
+  text-decoration: none;
+  font-color: #f0e6e9;
+}
+
+/* footer --------------------------- */
+
+#copy {
+  padding: 0;
+  bottom: 0px;
+  color: #3d3235;
+;
+}
+
+.footer, .push {
+  height: 40px;
+}
+
