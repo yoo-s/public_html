@@ -24,6 +24,7 @@ while($row = mysqli_fetch_array($res)){
 <title>Settings - yooso's Project</title>
 <link rel="stylesheet" href="prj-style.css">
 <script type="text/Javascript" src="cursor.js"></script>
+<script type="text/javascript" src="maxlength.js"></script>
 </head>
 <body>
 <header>
@@ -36,7 +37,7 @@ while($row = mysqli_fetch_array($res)){
 <section id="gframe">
 	<h1>User Preferences</h1><br>
 
-	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">
+	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data" onsubmit="return checkchars(this)">
 		Display Name: <input type="text" name="displayName" value="<?=$displayName; ?>" /><br><br>
 		Password: <input type="password" name="password" value="<?=$password; ?>" /><br><br>
 		<input class="myButton" type="submit" value="Update Preferences" name="submit">
