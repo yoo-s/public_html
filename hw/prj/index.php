@@ -9,7 +9,7 @@
 <body onload="slideAuto(x);">
 	<header>
 		<center>
-		<img id="cookie" src="http://i.imgur.com/Gj5Y7Bm.png" width="40%" /><br />
+		<a href="index.php"><img id="cookie" src="http://i.imgur.com/Ey2UU8l.png" width="40%" /></a><br />
 		</center>
 	</header>
 	<?php include 'homenav.php' ?><br>

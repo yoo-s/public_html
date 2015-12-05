@@ -11,6 +11,7 @@ html, body {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   height: 100%;
+  cursor:url(http://i.imgur.com/KW47N7A.png),auto;
 }
 
 p {
@@ -167,6 +168,11 @@ button {
 
 /* custom -------------------------- */
 
+#cursor {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 #petbox {
   border: solid #33292d 4px;
   border-radius: 20px;
@@ -234,6 +240,7 @@ button {
   background-image: linear-gradient(to bottom, #423439, #6b595d);
   text-decoration: none;
   font-color: #f0e6e9;
+  cursor:url(http://i.imgur.com/KW47N7A.png),auto;
 }
 
 /* footer --------------------------- */

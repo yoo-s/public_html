@@ -27,7 +27,7 @@
 			header('Location: pet.php');
 		} else {
 			// The username/password are incorrect so set an error message
-			echo "Sorry, you must enter a valid username and password to log in.";
+			echo "";
 		}
 		mysqli_free_result($result);
 		mysqli_close($dbc);
@@ -45,30 +45,17 @@
 <body>
 <header>
 	<center>
-	<img id="cookie" src="http://i.imgur.com/Gj5Y7Bm.png" width="40%" /><br />
+	<a href="index.php"><img id="cookie" src="http://i.imgur.com/Ey2UU8l.png" width="40%" /></a><br />
 	</center>
 </header>
 <?php include 'homenav.php' ?><br>
-<?php
-	if (isset($_SESSION['valid_user'])) {
-		echo " <center><p> You are logged in as </p> " . $_SESSION['valid_user'] . "<br><br>"; 
-		echo " <br><br><h2> Welcome, " . $_SESSION['displayName'] . "!</h2></center>";
-		echo "<a href='logout.php'>Logout</a>";
-	}
-	else {
-		if (isset($userName)) {
-			// user tried but can't log in
-			echo "<h4 id='loginfail'> *Could not log you in </h4>";
-		} else {
-			// user has not tried
-			echo "";
-		}
-	}
-?>
+<?php include 'loginerror.php' ?><br>
+<h4 id='loginfail'></h4>
+
 	<center><br>
 	<section id="gframe">
 		<h1> Log In </h1><br>
-		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+		<form id="login" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 			<fieldset>
 			<label for="username">Username:</label>
 			<input type='text' name='userName' /><br><br>

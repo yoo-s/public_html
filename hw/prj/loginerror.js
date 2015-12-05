@@ -10,7 +10,7 @@ function loginfail() {
       document.getElementById("loginfail").innerHTML=xhr.responseText;
     }
   }
-  xhr.open("GET","loginfail.php",true);
+  xhr.open("GET","loginerror.php?login=#",true);
   xhr.send();
 }
 

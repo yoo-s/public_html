@@ -8,11 +8,12 @@ session_start();
 		<meta charset="utf-8">
 		<title>Help - yooso's Project</title>
 		<link rel="stylesheet" href="prj-style.css">
+		<script type="text/Javascript" src="cursor.js"></script>
 	</head>
 	<body>
 		<header>
 			<center>
-			<img id="cookie" src="http://i.imgur.com/Gj5Y7Bm.png" width="40%" /><br />
+			<img id="cookie" src="http://i.imgur.com/Ey2UU8l.png" width="40%" /><br />
 			<?php include 'nav.php';?><br />
 			</center>
 		</header>

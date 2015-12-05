@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <title>Create Account - yooso's Project</title>
 	<link rel="stylesheet" href="prj-style.css">
+	<script type="text/javascript" src="maxlength.js"></script>
 	<!-- Script for the event handlers    -->
 </head>
 <body>
 <header>
 	<center>
-	<img id="cookie" src="http://i.imgur.com/Gj5Y7Bm.png" width="40%" /><br />
+	<a href="index.php"><img id="cookie" src="http://i.imgur.com/Ey2UU8l.png" width="40%" /></a><br />
 	</center>
 </header>
 <?php include 'homenav.php' ?><br>
@@ -41,7 +42,6 @@ if (isset($_POST['submit'])) {
 
 			// Confirm success with the user
 			echo '<p>Thank you for registering! You\'re now ready to log in.</p><br>';
-			echo '<a href="index.php">Home</a>';
 
 			mysqli_close($dbc);
 			exit();
@@ -63,7 +63,7 @@ mysqli_close($dbc);
 	<center><br>
 	<section id="gframe">
 		<h1>Sign Up</h1><br>
-		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return checkchars(this)">
 		<fieldset>
 		<label for="username">Username:</label>
 		<input type="text" id="userName" name="userName" value="<?php if (!empty($userName)) echo $userName; ?>" /><br><br>
