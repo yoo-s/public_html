@@ -50,7 +50,6 @@
 		</center>
 	</header>
 	<center><br>
-	<p>*Page still undergoing development.</p>
 	<section id="gframe">
 	<h1>Share your pet pictures!</h1><br>
 		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data">
@@ -81,12 +80,7 @@
 	echo "<h1>Pet Gallery</h1><br>";
 	while($row = mysqli_fetch_array($res)){   //Creates a loop through results
 		$id = $row['id'];
-		$count = 0;
 		echo "<div class='gbox'><img class='gimg' src=get.php?id=$id></div>";
-		/*$count++;
-		if($count == 5) {
-			echo "<br>";
-		}*/
 	}
 	echo "</section></center>"; //Close the table in HTML
 

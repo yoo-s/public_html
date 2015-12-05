@@ -22,8 +22,6 @@
 			$_SESSION['displayName'] = $row['displayName'];
 			$_SESSION['petPic'] = $row['petPic'];
 			$_SESSION['petName'] = $row['petName'];
-			$_SESSION['avatar'] = $row['avatar'];
-			$_SESSION['imgname'] = $row['imgname'];
 			header('Location: pet.php');
 		} else {
 			// The username/password are incorrect so set an error message

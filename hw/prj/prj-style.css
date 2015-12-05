@@ -195,6 +195,7 @@ button {
 
 .gbox {
   //display: inline-block;
+  //float: left;
   border: solid #33292d 4px;
   border-radius: 10px;
   background: #fff;
