@@ -14,6 +14,7 @@ $res = mysqli_query($dbc, $sql);
 while($row = mysqli_fetch_array($res)){
 	$displayName = $row['displayName'];
 	$password = $row['password'];
+	$petName = $row['petName'];
 }
 ?>
 
@@ -40,6 +41,7 @@ while($row = mysqli_fetch_array($res)){
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" enctype="multipart/form-data" onsubmit="return checkchars(this)">
 		Display Name: <input type="text" name="displayName" value="<?=$displayName; ?>" /><br><br>
 		Password: <input type="password" name="password" value="<?=$password; ?>" /><br><br>
+		Pet's Name: <input type="petName" name="petName" value="<?=$petName; ?>" /><br><br>
 		<input class="myButton" type="submit" value="Update Preferences" name="submit">
 	</form>
 </section><br>
@@ -47,7 +49,8 @@ while($row = mysqli_fetch_array($res)){
 if (isset($_POST['submit'])) {
 	$displayName = $_POST['displayName'];
 	$password = $_POST['password'];
-	$upd = "UPDATE prj_users SET displayName='".$displayName."', password='".$password."' WHERE id=$id";
+	$petName = $_POST['petName'];
+	$upd = "UPDATE prj_users SET displayName='".$displayName."', password='".$password."', petName='".$petName."' WHERE id=$id";
 	$updR = mysqli_query($dbc, $upd);
 	if ($updR) {
 		echo "Settings updated.";
