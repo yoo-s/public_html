@@ -38,7 +38,7 @@
     <meta charset="utf-8">
     <title>Log In - yooso's Project</title>
 	<link rel="stylesheet" href="prj-style.css">
-	<script type="text/Javascript" src="loginerror.js"></script>
+	<!--<script type="text/Javascript" src="loginerror.js"></script>-->
 </head>
 <body>
 <header>
@@ -47,9 +47,22 @@
 	</center>
 </header>
 <?php include 'homenav.php' ?><br>
-<?php include 'loginerror.php' ?><br>
 <h4 id='loginfail'></h4>
-
+<?php
+	if (isset($_SESSION['valid_user'])) {
+		echo " <center><p> You are already logged in! Click the link below to log out and try again.</p><br>"; 
+		echo "<a href='logout.php'>Logout</a></center>";
+	}
+	else {
+		if (isset($userName)) {
+			// user tried but can't log in
+			echo "Invalid username or password.";
+		} else {
+			// user has not tried
+			echo "";
+		}
+	}
+?>
 	<center><br>
 	<section id="gframe">
 		<h1> Log In </h1><br>
@@ -59,7 +72,7 @@
 			<input type='text' name='userName' /><br><br>
 			<label for="password">Password:</label>
 			<input type='password' name='password' /><br><br><br>
-			<input onclick="loginfail()" class="myButton" type="submit" value="Log In" name="submit" />
+			<input class="myButton" type="submit" value="Log In" name="submit" />
 			</fieldset>
 			</form>
 	</section>
