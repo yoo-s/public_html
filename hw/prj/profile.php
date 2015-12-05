@@ -42,11 +42,11 @@ include 'connectvars.php';
 			echo "<h1>Profile</h1><br>";
 			echo "<p>Hi, my name is ".$displayName." and this is my pet, ".$petName.".";
 			if ($petPic == "pet1") {
-				echo "<div width='100px'><img width='100px' src='http://i.imgur.com/dDrIAiD.gif' ></div>";
+				echo "<div width='100px'><img width='100px' src='http://i.imgur.com/XAWDTRu.gif' ></div>";
 			} else if ($petPic == "pet2") {
-				echo "<div width='100px'><img width='100px' src='http://i.imgur.com/ygp1Gna.gif' ></div>";
+				echo "<div width='100px'><img width='100px' src='http://i.imgur.com/AmlLeM3.gif' ></div>";
 			} else if ($petPic == "pet3") {
-				echo "<div width='100px'><img width='100px' src='http://i.imgur.com/VKwLAuZ.gif' ></div>";
+				echo "<div width='100px'><img width='100px' src='http://i.imgur.com/9ysbL4m.gif' ></div>";
 			}
 
 			mysqli_close($dbc); //Make sure to close out the database connection

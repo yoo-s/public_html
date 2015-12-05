@@ -78,13 +78,13 @@ mysqli_close($dbc);
 			<tr><td>
 			<input type="radio" id="pet" name="pet"
 			<?php if (isset($pet) && $pet=="pet1") echo "checked";?>
-			value="pet1"><img width="100px" src="http://i.imgur.com/dDrIAiD.gif" ><br><br></td>
+			value="pet1"><img width="100px" src="http://i.imgur.com/XAWDTRu.gif" ><br><br></td>
 			<td><input type="radio" id="pet" name="pet"
 			<?php if (isset($pet) && $pet=="pet2") echo "checked";?>
-			value="pet2"><img width="100px" src="http://i.imgur.com/ygp1Gna.gif" ><br><br></td>
+			value="pet2"><img width="100px" src="http://i.imgur.com/AmlLeM3.gif" ><br><br></td>
 			<td><input type="radio" id="pet" name="pet"
 			<?php if (isset($pet) && $pet=="pet3") echo "checked";?>
-			value="pet3"><img width="100px" src="http://i.imgur.com/VKwLAuZ.gif" ><br><br></td><tr>
+			value="pet3"><img width="100px" src="http://i.imgur.com/9ysbL4m.gif" ><br><br></td><tr>
 		</table>
 		<label for="petname">Pet's Name:</label>
 		<input type="text" id="petName" name="petName" /><br><br>

@@ -43,11 +43,11 @@ $update = mysqli_query($dbc, $won);
 					$petName = $row['petName'];
 					echo "<h1>".$petName."</h1>";
 					if ($row["petPic"] == "pet1") {
-						echo "<div id='petbox'><img width='200px' src='http://i.imgur.com/dDrIAiD.gif' ></div>";
+						echo "<div id='petbox'><img width='200px' src='http://i.imgur.com/XAWDTRu.gif' ></div>";
 					} else if ($row["petPic"] == "pet2") {
-						echo "<div id='petbox'><img width='200px' src='http://i.imgur.com/ygp1Gna.gif' ></div>";
+						echo "<div id='petbox'><img width='200px' src='http://i.imgur.com/AmlLeM3.gif' ></div>";
 					} else if ($row["petPic"] == "pet3") {
-						echo "<div id='petbox'><img width='200px' src='http://i.imgur.com/VKwLAuZ.gif' ></div>";
+						echo "<div id='petbox'><img width='200px' src='http://i.imgur.com/9ysbL4m.gif' ></div>";
 					}
 				}
 			} else {
